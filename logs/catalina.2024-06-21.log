@@ -1,0 +1,612 @@
+21-Jun-2024 15:41:42.254 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 15:41:42.267 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 15:41:42.267 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 15:41:42.267 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 15:41:42.268 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 15:41:42.268 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 15:41:42.268 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 15:41:42.269 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 15:41:42.269 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 15:41:42.269 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 15:41:42.269 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 15:41:42.288 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 15:41:42.288 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 15:41:42.289 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 15:41:42.289 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 15:41:42.289 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 15:41:42.289 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 15:41:42.290 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 15:41:42.290 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\temp
+21-Jun-2024 15:41:42.290 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\logging.properties
+21-Jun-2024 15:41:42.290 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 15:41:42.291 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=49354:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 15:41:42.291 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 15:41:42.291 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 15:41:42.291 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 15:41:42.291 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 15:41:42.301 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 15:41:42.920 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 15:41:43.127 SEVERE [TestDao] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:212)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1010)
+		... 13 more
+21-Jun-2024 15:41:43.135 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 474] millisecondes
+21-Jun-2024 15:41:43.387 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 15:41:43.388 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 15:41:43.435 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml]
+21-Jun-2024 15:41:47.205 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 15:41:47.487 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml] a pris [4 052] ms
+21-Jun-2024 15:41:47.494 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [4 357] millisecondes
+21-Jun-2024 15:41:47.505 SEVERE [TestDao] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 15:41:47.506 INFO [TestDao] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 15:41:47.506 INFO [TestDao] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 15:41:47.522 WARNING [TestDao] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [projetjee]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:668)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 15:41:47.533 INFO [TestDao] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 15:41:47.534 INFO [TestDao] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 15:42:12.661 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 15:42:12.683 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 15:42:12.687 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 15:42:12.688 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 15:42:12.689 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 15:42:12.689 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 15:42:12.689 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 15:42:12.690 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 15:42:12.690 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 15:42:12.690 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 15:42:12.690 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 15:42:12.713 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 15:42:12.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 15:42:12.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 15:42:12.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 15:42:12.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 15:42:12.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 15:42:12.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 15:42:12.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\temp
+21-Jun-2024 15:42:12.716 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\logging.properties
+21-Jun-2024 15:42:12.718 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 15:42:12.718 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=49361:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 15:42:12.718 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 15:42:12.718 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 15:42:12.719 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 15:42:12.719 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 15:42:12.728 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 15:42:13.262 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 15:42:13.447 SEVERE [TestDao] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:212)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1010)
+		... 13 more
+21-Jun-2024 15:42:13.454 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 309] millisecondes
+21-Jun-2024 15:42:13.691 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 15:42:13.691 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 15:42:13.708 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml]
+21-Jun-2024 15:42:16.978 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 15:42:17.292 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml] a pris [3 585] ms
+21-Jun-2024 15:42:17.305 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 850] millisecondes
+21-Jun-2024 15:42:17.319 SEVERE [TestDao] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 15:42:17.320 INFO [TestDao] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 15:42:17.320 INFO [TestDao] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 15:42:17.351 WARNING [TestDao] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [projetjee]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:668)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 15:42:17.361 INFO [TestDao] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 15:42:17.362 INFO [TestDao] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:15:22.430 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 16:15:22.441 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 16:15:22.441 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 16:15:22.441 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 16:15:22.442 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 16:15:22.442 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 16:15:22.443 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 16:15:22.443 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 16:15:22.444 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 16:15:22.452 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 16:15:22.473 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 16:15:22.484 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 16:15:22.484 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 16:15:22.485 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 16:15:22.485 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 16:15:22.485 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 16:15:22.485 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 16:15:22.486 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 16:15:22.487 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\temp
+21-Jun-2024 16:15:22.487 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\logging.properties
+21-Jun-2024 16:15:22.487 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 16:15:22.487 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=49784:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 16:15:22.488 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 16:15:22.491 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 16:15:22.492 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 16:15:22.493 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 16:15:22.500 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 16:15:23.021 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:15:23.200 SEVERE [TestDao] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:212)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1154)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1010)
+		... 13 more
+21-Jun-2024 16:15:23.206 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 334] millisecondes
+21-Jun-2024 16:15:23.375 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 16:15:23.375 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 16:15:23.417 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml]
+21-Jun-2024 16:15:26.588 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 16:15:26.859 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml] a pris [3 442] ms
+21-Jun-2024 16:15:26.867 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 660] millisecondes
+21-Jun-2024 16:15:26.878 SEVERE [TestDao] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 16:15:26.879 INFO [TestDao] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 16:15:26.879 INFO [TestDao] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 16:15:26.895 WARNING [TestDao] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [projetjee]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:668)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.TestDao(Bootstrap.java:474)
+21-Jun-2024 16:15:26.907 INFO [TestDao] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:15:26.907 INFO [TestDao] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:22:30.682 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 16:22:30.693 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 16:22:30.693 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 16:22:30.694 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 16:22:30.694 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 16:22:30.694 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 16:22:30.695 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 16:22:30.695 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 16:22:30.697 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 16:22:30.697 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 16:22:30.698 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 16:22:30.713 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 16:22:30.713 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 16:22:30.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 16:22:30.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 16:22:30.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 16:22:30.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 16:22:30.714 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee
+21-Jun-2024 16:22:30.715 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\temp
+21-Jun-2024 16:22:30.716 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\logging.properties
+21-Jun-2024 16:22:30.716 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 16:22:30.716 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=51027:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 16:22:30.717 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 16:22:30.717 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 16:22:30.717 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 16:22:30.718 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 16:22:30.727 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 16:22:31.200 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:22:31.398 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 165] millisecondes
+21-Jun-2024 16:22:31.479 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 16:22:31.481 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 16:22:31.498 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml]
+21-Jun-2024 16:22:34.534 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 16:22:34.795 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\projetjee\conf\Catalina\localhost\projetjee.xml] a pris [3 297] ms
+21-Jun-2024 16:22:34.800 INFO [TestDao] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:22:34.819 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 420] millisecondes
+21-Jun-2024 16:41:31.417 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 16:41:31.424 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 16:41:31.424 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 16:41:31.425 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 16:41:31.425 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 16:41:31.426 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 16:41:31.426 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 16:41:31.427 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 16:41:31.427 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 16:41:31.430 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:41:31.430 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 16:41:31.449 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 16:41:31.449 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 16:41:31.449 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 16:41:31.450 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 16:41:31.450 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 16:41:31.450 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 16:41:31.451 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:41:31.451 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\temp
+21-Jun-2024 16:41:31.451 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\logging.properties
+21-Jun-2024 16:41:31.452 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 16:41:31.452 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=51243:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 16:41:31.453 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 16:41:31.453 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 16:41:31.454 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 16:41:31.454 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 16:41:31.462 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 16:41:31.976 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:41:32.157 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 195] millisecondes
+21-Jun-2024 16:41:32.236 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 16:41:32.237 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 16:41:32.251 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml]
+21-Jun-2024 16:41:35.072 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 16:41:35.322 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml] a pris [3 071] ms
+21-Jun-2024 16:41:35.328 INFO [TestDao] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:41:35.346 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 188] millisecondes
+21-Jun-2024 16:42:12.380 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 16:42:12.394 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 16:42:12.429 WARNING [Thread-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [jee-barry]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:803)
+21-Jun-2024 16:42:12.446 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:42:12.449 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:42:17.920 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 16:42:17.927 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 16:42:17.927 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 16:42:17.927 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 16:42:17.927 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 16:42:17.928 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 16:42:17.928 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 16:42:17.928 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 16:42:17.928 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 16:42:17.928 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:42:17.929 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 16:42:17.946 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 16:42:17.946 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:42:17.947 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\temp
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\logging.properties
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=51254:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 16:42:17.948 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 16:42:17.954 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 16:42:18.451 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:42:18.609 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 085] millisecondes
+21-Jun-2024 16:42:18.660 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 16:42:18.660 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 16:42:18.675 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml]
+21-Jun-2024 16:42:21.205 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 16:42:21.448 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml] a pris [2 773] ms
+21-Jun-2024 16:42:21.451 INFO [TestDao] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:42:21.465 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2 854] millisecondes
+21-Jun-2024 16:43:23.059 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 16:43:23.079 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 16:43:23.093 WARNING [Thread-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [jee-barry]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:803)
+21-Jun-2024 16:43:23.100 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:43:23.102 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:43:29.116 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:        Apache Tomcat/9.0.33
+21-Jun-2024 16:43:29.128 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé:       Mar 11 2020 09:31:38 UTC
+21-Jun-2024 16:43:29.128 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur:      9.0.33.0
+21-Jun-2024 16:43:29.129 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS:           Windows 11
+21-Jun-2024 16:43:29.129 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de l'OS:        10.0
+21-Jun-2024 16:43:29.130 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+21-Jun-2024 16:43:29.131 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Répertoire de Java:     C:\Program Files\Java\jdk-17
+21-Jun-2024 16:43:29.131 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Version de la JVM:           17.0.10+11-LTS-240
+21-Jun-2024 16:43:29.131 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM:            Oracle Corporation
+21-Jun-2024 16:43:29.131 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:43:29.134 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-9.0.33
+21-Jun-2024 16:43:29.155 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.lang=ALL-UNNAMED
+21-Jun-2024 16:43:29.156 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.io=ALL-UNNAMED
+21-Jun-2024 16:43:29.158 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util=ALL-UNNAMED
+21-Jun-2024 16:43:29.158 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+21-Jun-2024 16:43:29.159 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+21-Jun-2024 16:43:29.159 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.home=C:\apache-tomcat-9.0.33
+21-Jun-2024 16:43:29.159 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dcatalina.base=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry
+21-Jun-2024 16:43:29.159 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.io.tmpdir=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\temp
+21-Jun-2024 16:43:29.159 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.config.file=C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\logging.properties
+21-Jun-2024 16:43:29.160 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jun-2024 16:43:29.160 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\lib\idea_rt.jar=51262:C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.1.1\bin
+21-Jun-2024 16:43:29.161 INFO [TestDao] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande: -Dfile.encoding=UTF-8
+21-Jun-2024 16:43:29.161 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.23] en utilisant APR version [1.7.0]
+21-Jun-2024 16:43:29.161 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR: IPv6 [true], sendfile [true], accept filters [false], random [true]
+21-Jun-2024 16:43:29.161 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL: useAprConnector [false], useOpenSSL [true]
+21-Jun-2024 16:43:29.170 INFO [TestDao] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1c  28 May 2019]
+21-Jun-2024 16:43:29.670 INFO [TestDao] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:43:29.853 INFO [TestDao] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1 237] millisecondes
+21-Jun-2024 16:43:29.931 INFO [TestDao] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+21-Jun-2024 16:43:29.932 INFO [TestDao] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets: [Apache Tomcat/9.0.33]
+21-Jun-2024 16:43:29.947 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Déploiement du descripteur de configuration [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml]
+21-Jun-2024 16:43:32.774 INFO [TestDao] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+21-Jun-2024 16:43:32.979 INFO [TestDao] org.apache.catalina.startup.HostConfig.deployDescriptor Le traitement du descripteur de déploiement [C:\Users\Amadou Tidiane Barry\IdeaProjects\jee-barry\conf\Catalina\localhost\jee-barry.xml] a pris [3 031] ms
+21-Jun-2024 16:43:32.984 INFO [TestDao] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 16:43:33.005 INFO [TestDao] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [3 151] millisecondes
+21-Jun-2024 18:25:21.136 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+21-Jun-2024 18:25:21.197 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+21-Jun-2024 18:25:21.262 WARNING [Thread-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Impossible d'effacer les références faibles de ObjectStreamClass$Caches pour l'application web [jee-barry]
+	java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2269)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2256)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1627)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1555)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:448)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5437)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400)
+		at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:803)
+21-Jun-2024 18:25:21.310 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+21-Jun-2024 18:25:21.320 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
